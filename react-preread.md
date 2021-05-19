@@ -1,6 +1,6 @@
 # what is declarative in terms of react?
 
-so if you are new to react then you might have heard about react being declarative.
+if you are new to react then you might have heard about react being declarative.
 What exacly does that mean?Lets have a look.
 
 Say we have a button with us and initially a normal text of welcome user.
@@ -33,7 +33,11 @@ So we need to tell the browser each and every step which are as follows:
 3. when user clicks on that button,give me that element which lies on the document and whose id is ....(user in our case)
 4. set the text as ....(prajwal in our case) on it.
 
-So after the birth of react this procedure seems more like a donkey work.
+Some crucial points to be noted:
+
+1. we are dealing with the browser's DOM to perform our actions.This,is what we dont do in React.We never interact with DOM in React.
+   So after the birth of react this procedure seems more like a donkey work.
+2. We are telling browser each and every instruction and then it does something for us.
 
 React has came out with a smarter approach and thats nothing but declarative!
 
@@ -68,10 +72,13 @@ export default function App() {
 Again if you dont know about useState you can read [this](https://kaaliui.netlify.app "useState blog") blog.I have tried to explain things in a simpler with the same example so that it is relatable.I do suggest you to check out [this](https://kaaliui.netlify.app "useState blog") blog.
 
 In this react code,you see we only tell the react..<br> Hey React,I want to display something... on this element when some one clicks on the button.
-Neither we do document.querySelector nor we do .innerText.But still the work is done.How>React does all of that for us.
+Neither we do document.querySelector nor we do .innerText..i.e. We dont deal direclty with browser's DOM.But still the work is done.How?Well,React does all of that for us.
 
+you see,We dont give set of long instructions.
 We only tell react what to do..how does react do that is react's look out.<br>
 Its more like saying
+
+## TL;DR <br>
 
 <em>"suun react,tuze ye element pe ye text dikhana hai..kuch bhi kar kaise bhi kar bass kaam ho jaana chaiye..!"<br></em>
 Thats declarative!
