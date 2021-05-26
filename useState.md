@@ -1,6 +1,6 @@
 # useState
 
-useState is a react API to change the state of react's elements.
+useState is a react API to change the state of elements or components.
 Why do we require a seperate hook to change a value of an element?<br>
 Well,Its always a bad practise to mutate the state directly.<br>
 Let me explain things along with the code itself.
@@ -58,6 +58,16 @@ export default function App() {
 }
 ```
 
+<br>
+
+> _Note: I am purposely showing the wrong approach.Sometimes looking at what is wrong helps us understanding what is correct!!_
+
+<br>
+
+Here goes the sandbox link for the right approach.
+
+{% codesandbox bqw1u  %}
+
 If you see the console.log within onClick you could see that the value of user has been updated.But Wait!Why isnt it reflecting in the view?
 
 Its because..
@@ -67,3 +77,6 @@ Its because..
 2. if you dont use setState, `{console.log(user, "this is from user")}` does not run => function is not called => rerendering does not occur.
 
 Conclusion:<br> <b>only when the state is changed through setState the re-rendering of function occurs.</b>
+
+Thank you for reading till the end. If you notice something wrong do suggest me in the comment box.
+Do give it a like if it helped you understanding the concept.

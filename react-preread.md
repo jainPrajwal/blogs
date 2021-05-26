@@ -20,12 +20,15 @@ Lets have a look at the following code.
 </div>
 ```
 
+Here is what we do in vanilla javascript.
+
 ```javascript
 document.querySelector("#btn-click").addEventListener("click", () => {
   document.querySelector("#user").innerText = "prajwal";
 });
 ```
 
+{% codepen https://codepen.io/prajwal_/pen/NWpbvBV %}
 So we need to tell the browser each and every step which are as follows:
 
 1. hey browser, give me the button which lies on the document whose id is ....(btn-click) in our case.
@@ -38,6 +41,8 @@ Some crucial points to be noted:
 1. we are dealing with the browser's DOM to perform our actions.This,is what we dont do in React.We never interact with DOM in React.
    So after the birth of react this procedure seems more like a donkey work.
 2. We are telling browser each and every instruction and then it does something for us.
+
+Here is the codepen link if you wish to try your hands on
 
 React has came out with a smarter approach and thats nothing but declarative!
 
@@ -69,7 +74,11 @@ export default function App() {
 }
 ```
 
-Again if you dont know about useState you can read [this](https://kaaliui.netlify.app "useState blog") blog.I have tried to explain things in a simpler with the same example so that it is relatable.I do suggest you to check out [this](https://kaaliui.netlify.app "useState blog") blog.
+Here is the code for you to play with.
+
+{% codesandbox bqw1u  %}
+
+Again if you dont know about useState you can read [this](https://dev.to/j836/why-use-usestate-1cd9 "useState blog") blog.I have tried to explain things in a simpler way with the same example so that it is relatable.I do suggest you to check out [this](https://dev.to/j836/why-use-usestate-1cd9 "useState blog") blog.
 
 In this react code,you see we only tell the react..<br> Hey React,I want to display something... on this element when some one clicks on the button.
 Neither we do document.querySelector nor we do .innerText..i.e. We dont deal direclty with browser's DOM.But still the work is done.How?Well,React does all of that for us.
@@ -82,3 +91,17 @@ Its more like saying
 
 <em>"suun react,tuze ye element pe ye text dikhana hai..kuch bhi kar kaise bhi kar bass kaam ho jaana chaiye..!"<br></em>
 Thats declarative!
+
+<!--  So here is all the proof thaat shows react is declarative! Here you need to tell the browser eaach and every step as follows
+1. give me the button which lies on the document whose id is ....
+2.Do something when user clicks on that button
+3.give me that element which lies on the document and whose id is user.
+ 4.set the text as .... on it.
+
+
+-->
+
+<!--  In react
+Hey React,I want to display ... on this element when some one clicks on the button.
+this is declarative
+-->
