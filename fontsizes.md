@@ -16,7 +16,7 @@ Whereas `em` , `rem` are `relative/responsive` units.
 They scale according to the viewport.
 
 Change in the value of `parent` or `root` element affects the value of relative units.
-`em` should be used for padding,margin,line-height etc.
+`em` should be used for line-height, etc.
 
 Okay so before studying em and rem,
 Remember `default font size of browser is 16px`.
